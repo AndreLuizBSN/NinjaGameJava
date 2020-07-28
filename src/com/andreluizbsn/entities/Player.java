@@ -4,7 +4,6 @@ package com.andreluizbsn.entities;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
-import com.andreluizbsn.graficos.Spritesheet;
 import com.andreluizbsn.main.Game;
 import com.andreluizbsn.world.Camera;
 import com.andreluizbsn.world.World;
@@ -34,11 +33,15 @@ public class Player extends Entity{
 	public double upLadderY = 0;
 	public PlayerAnnimation playerAnnimation;
 	public Entity ladderIgnore;
+	public double newY;
+	public boolean isClimb = false;
 	
 	public boolean up, down;
 
 	public Player(int x, int y, int width, int height, double speed, BufferedImage sprite) {
 		super(x, y, width, height, speed, sprite);
+		
+		this.newY = y;
 		
 		PLAYER_SPRITE_R_MOVES[0] = PLAYER_SPRITE_R;
 		PLAYER_SPRITE_R_MOVES[1] = Game.spritesheet.getSprite(Game.basex*1, 0, Game.basex, Game.basey);
@@ -128,6 +131,28 @@ public class Player extends Entity{
 	
 				
 				if(right && World.isFree((int)(x+speed), (int)y)) {
+					/*boolean[] b = World.isClimbDown((int)(x+speed), (int)y);
+					if ( b[0] == false ) {
+						b = World.isClimbDown((int)(x+speed), (int)y + 1);
+					}
+					if ( b[0] == true ) {
+						if ( b[1] = true ) {
+							newY = y - Game.basey - 1;
+							isClimb = true;
+						} else {
+							newY = y + Game.basey + 1;
+							isClimb = false;
+						}
+					}
+					
+					if ( y > newY && isClimb ) {
+						y-=speed;
+					} else if ( y < newY && !isClimb ) {
+						y+=speed;
+					} else {
+						newY = y;
+					}*/
+					
 					x+=speed;
 					isRight = true;
 					if ( ! isJumping && ! isJumpAnnimation ) {

@@ -5,7 +5,6 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 
-import com.andreluizbsn.entities.Coin;
 import com.andreluizbsn.main.Game;
 
 public class UI {
@@ -21,8 +20,22 @@ public class UI {
 		g.drawString(((int)Game.player.life + "/100").toString(),45,11);
 		
 		//g.drawImage(Coin.SPRITE, ( Game.WIDTH * Game.SCALE ) - 70, 2, null);
-		g.setFont(new Font("Arial", Font.BOLD, 20));
-		g.drawString(String.valueOf(Game.player.coins), ( Game.WIDTH * Game.SCALE ) - 50,17);
+		//CustomFont c = new CustomFont();
+		//g.setFont(new CustomFont().getFont(30));
+		g.setFont(new Font("Serif", Font.BOLD, 30));
+		g.setColor(Color.white);
+		g.drawString("鮮やかに 恋してにんじゃりばんばん", ( Game.WIDTH * Game.SCALE ) / 5 + 3,50 + 3);
+		g.setFont(new Font("Serif", Font.BOLD, 30));
+		g.setColor(Color.black);
+		g.drawString("鮮やかに 恋してにんじゃりばんばん", ( Game.WIDTH * Game.SCALE ) / 5,50);
+		
+		/*
+		g.setFont(new Font("Serif", Font.BOLD, 30));
+		g.setColor(Color.white);
+		g.drawString(String.valueOf(Game.time), ( Game.WIDTH * Game.SCALE ) / 5,50);
+		g.setFont(new Font("Serif", Font.PLAIN, 30));
+		g.setColor(Color.black);
+		g.drawString(String.valueOf(Game.time), ( Game.WIDTH * Game.SCALE ) / 5,50);*/
 	}
 	
 }

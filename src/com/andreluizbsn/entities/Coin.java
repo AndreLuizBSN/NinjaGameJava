@@ -2,8 +2,6 @@ package com.andreluizbsn.entities;
 
 import java.awt.image.BufferedImage;
 
-import com.andreluizbsn.main.Game;
-
 public class Coin extends Entity {
 
 	//public static final BufferedImage SPRITE = Game.spritesheet.getSprite(64, 0, Game.basex, Game.basey);

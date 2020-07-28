@@ -55,6 +55,8 @@ public class Game extends Canvas implements Runnable,KeyListener,MouseListener,M
 	
 	public UI ui;
 	
+	public static int time = 0;
+	
 	public Game(){
 		addKeyListener(this);
 		addMouseListener(this);
@@ -230,6 +232,7 @@ public class Game extends Canvas implements Runnable,KeyListener,MouseListener,M
 				System.out.println("FPS: "+ frames);
 				frames = 0;
 				timer+=1000;
+				time++;
 			}
 			
 		}

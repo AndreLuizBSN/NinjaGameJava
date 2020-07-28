@@ -24,6 +24,30 @@ public class Tile {
 	public static BufferedImage TILE_FLOOR_PLUS_1 = Game.spritesheet.getSprite(Game.basex*0, Game.basex*2, Game.basex, Game.basey);
 	public static BufferedImage TILE_FLOOR_PLUS_2 = Game.spritesheet.getSprite(Game.basex*1, Game.basex*2, Game.basex, Game.basey);
 	
+	public static BufferedImage TILE_CLIMB_1 = Game.spritesheet.getSprite(Game.basex*0, Game.basex*5, Game.basex, Game.basey);
+	public static BufferedImage TILE_CLIMB_2 = Game.spritesheet.getSprite(Game.basex*0, Game.basex*6, Game.basex, Game.basey);
+	public static BufferedImage TILE_CLIMB_3 = Game.spritesheet.getSprite(Game.basex*1, Game.basex*5, Game.basex, Game.basey);
+	public static BufferedImage TILE_CLIMB_4 = Game.spritesheet.getSprite(Game.basex*1, Game.basex*6, Game.basex, Game.basey);
+	public static BufferedImage TILE_CLIMB_5 = Game.spritesheet.getSprite(Game.basex*2, Game.basex*4, Game.basex, Game.basey);
+	public static BufferedImage TILE_CLIMB_6 = Game.spritesheet.getSprite(Game.basex*2, Game.basex*5, Game.basex, Game.basey);
+	public static BufferedImage TILE_CLIMB_7 = Game.spritesheet.getSprite(Game.basex*2, Game.basex*6, Game.basex, Game.basey);
+	public static BufferedImage TILE_CLIMB_8 = Game.spritesheet.getSprite(Game.basex*3, Game.basex*3, Game.basex, Game.basey);
+	public static BufferedImage TILE_CLIMB_9 = Game.spritesheet.getSprite(Game.basex*3, Game.basex*4, Game.basex, Game.basey);
+	public static BufferedImage TILE_CLIMB_10 = Game.spritesheet.getSprite(Game.basex*3, Game.basex*5, Game.basex, Game.basey);
+	public static BufferedImage TILE_CLIMB_11 = Game.spritesheet.getSprite(Game.basex*3, Game.basex*6, Game.basex, Game.basey);
+	
+	public static BufferedImage TILE_DOWN_1 = Game.spritesheet.getSprite(Game.basex*4, Game.basex*3, Game.basex, Game.basey);
+	public static BufferedImage TILE_DOWN_2 = Game.spritesheet.getSprite(Game.basex*4, Game.basex*4, Game.basex, Game.basey);
+	public static BufferedImage TILE_DOWN_3 = Game.spritesheet.getSprite(Game.basex*4, Game.basex*5, Game.basex, Game.basey);
+	public static BufferedImage TILE_DOWN_4 = Game.spritesheet.getSprite(Game.basex*4, Game.basex*6, Game.basex, Game.basey);
+	public static BufferedImage TILE_DOWN_5 = Game.spritesheet.getSprite(Game.basex*5, Game.basex*4, Game.basex, Game.basey);
+	public static BufferedImage TILE_DOWN_6 = Game.spritesheet.getSprite(Game.basex*5, Game.basex*5, Game.basex, Game.basey);
+	public static BufferedImage TILE_DOWN_7 = Game.spritesheet.getSprite(Game.basex*5, Game.basex*6, Game.basex, Game.basey);
+	public static BufferedImage TILE_DOWN_8 = Game.spritesheet.getSprite(Game.basex*6, Game.basex*5, Game.basex, Game.basey);
+	public static BufferedImage TILE_DOWN_9 = Game.spritesheet.getSprite(Game.basex*6, Game.basex*6, Game.basex, Game.basey);
+	public static BufferedImage TILE_DOWN_10 = Game.spritesheet.getSprite(Game.basex*7, Game.basex*5, Game.basex, Game.basey);
+	public static BufferedImage TILE_DOWN_11 = Game.spritesheet.getSprite(Game.basex*7, Game.basex*6, Game.basex, Game.basey);
+	
 
 	private BufferedImage sprite;
 	private int x,y;

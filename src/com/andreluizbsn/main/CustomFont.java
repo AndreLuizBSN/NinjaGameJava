@@ -15,7 +15,7 @@ public class CustomFont {
 	private Font internalFont( float size ) {
 	
 		//InputStream stream = ClassLoader.getSystemClassLoader().getResourceAsStream("/pixelart.ttf");
-		InputStream stream = ClassLoader.getSystemClassLoader().getResourceAsStream("pixelart.ttf");
+		InputStream stream = ClassLoader.getSystemClassLoader().getResourceAsStream("Outwrite.ttf");
 		
 		
 		Font newFont = null;
